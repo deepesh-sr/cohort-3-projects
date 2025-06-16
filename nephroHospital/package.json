@@ -1,9 +1,9 @@
 {
-  "name": "week-4-todo-app",
+  "name": "nephrohospital",
   "version": "1.0.0",
-  "description": "A simple todo app build for learnig express.",
+  "description": "",
   "license": "ISC",
-  "author": "Deepesh Singh Rathore",
+  "author": "",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
