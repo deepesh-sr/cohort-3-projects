@@ -2,6 +2,26 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+let todo = [
+    {
+        id: 1,
+        title: "go to gym"
+    },
+    {
+        id: 2,
+        title: "go to class"
+    },
+    {
+        id: 3,
+        title: "go to home"
+    },
+    {
+        id: 4,
+        title: "go to college"
+    },
+
+]
+
 function getTodoByID(id) {
 
     todo.map((item) => {
@@ -20,7 +40,20 @@ function updateTodo(id, title) {
     console.log(todo);
 }
 
-updateTodo(1, "go to garden")
+function deleteTodo(id) {
+    const result = todo.filter((item) => {
+        return item.id != id
+    })
+    console.log(result)
+
+}
+
+function addTodo(id,title){
+todo.push({id,title})
+console.log(todo)
+}
+
+addTodo(1,"Hello")
 
 
 app.get('/', (req, res) => {
